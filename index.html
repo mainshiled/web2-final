@@ -20,11 +20,13 @@ function initMap() {
  }, function(results, status){
   if(status === google.maps.GeocoderStatus.OK){
    var location = results[0].geometry.location;
-var map =new google.maps.Map(document.getElementById('map'),{
+   map =new google.maps.Map(document.getElementById('map'),{
 center: location,
 mapTypeId: google.maps.MapTypeId.TERRAIN,
 zoom:16
 });
+  };
+  
 var infoWindow = new google.maps.InfoWindow({
  content: '東京工芸大学',
  position: location,
@@ -36,7 +38,6 @@ var infoWindow = new google.maps.InfoWindow({
   position: location,
   map: map
  });
-}
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCT0Q25mML0FlnqXjAcakco1OtJ2yhtBu8&callback=initMap">
