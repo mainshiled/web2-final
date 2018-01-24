@@ -16,7 +16,7 @@ html, body { height: 100%; margin; 0; padding: 0; }
 function initMap() {
  geocoder = new google.maps.Geocoder();
  geocoder.geocode({
-  'address':'神奈川県厚木市飯山1583'
+  'address':''
  }, function(results, status){
   if(status === google.maps.GeocoderStatus.OK){
    var location = results[0].geometry.location;
@@ -39,7 +39,7 @@ var infoWindow = new google.maps.InfoWindow({
 }
 </script>
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCWqXCwguMeP953Qxuu3WqgvpggEoJkbxI&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCT0Q25mML0FlnqXjAcakco1OtJ2yhtBu8&callback=initMap">
 </script>
 <body>
 </html>
